@@ -1,0 +1,21 @@
+h1 {
+    color: #ff007f;
+}
+
+img{
+  width: 15%
+}
+
+.background {
+  background-image:("closet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+}
+
+.WhitespaceBackground{
+  background-image: ("Iphonebackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+}
