@@ -27,7 +27,20 @@ img{
      left: 0;
      bottom: 0;
      width: 100%;
-     background-color: red;
+     background-color: rgba(71,172,235,1);
      color: white;
      text-align: center;
+     margin-top: 2.5em;
+     padding: 3.5em 0;
+}
+.header{
+  position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     background-color: rgba(71,172,235,1);
+     color: white;
+     text-align: center;
+     //margin-top: 2.5em;
+     padding: 3.5em 0;
 }
