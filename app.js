@@ -13,7 +13,7 @@ $.getJSON( "https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games?api_key=keybojDU
               );
   });
 // if (val.fields['rating']){items += '<p>' + val.fields['rating'] + '</p>';});
-
+//data from airtable, check Github to see that stuff lol beacuse u only have so long to do this
   $( "<ol/>", {
     "class": "my-new-list",
     html: items.join( "" )
