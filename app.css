@@ -16,7 +16,7 @@ img{
   display:flex;
 }
 
-.WhitespaceBackground{
+.bottom{
   //background-image: ("Iphonebackground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +33,7 @@ img{
      margin-top: 2.5em;
      padding: 3.5em 0;
 }
-.header{
+//.header{
   position: fixed;
      left: 0;
      top: 0;
