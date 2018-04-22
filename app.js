@@ -1,14 +1,14 @@
-var gameListItem = function(id, Name, Pictures, Cost, rate) {
+var gameListItem = function(id, Name, Pictures,Attachments, rate, Buy) {
   return `<div class="col-sm-6">
     <div class="card mb-4 box-shadow">
-      <img class="card-img-top" src="${pictureUrl}">
+      <img class="card-img-top" src="${Pictures}">
       <div class="card-body">
         <h2>${Name}</h2>
         <p class="card-text">${Pictures}</p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <a href="taqueria.html?id=${Cost}" class="btn btn-sm btn-outline-secondary">View details</a>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Add to favorites</button>
+            <a href="app.html?id=${Cost}" class="btn btn-sm btn-outline-secondary">Price</a>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Add to Favorite</button>
           </div>
           <small class="text-muted">${rate}</small>
         </div>
@@ -28,7 +28,8 @@ var gameListItem = function(id, Name, Pictures, Cost, rate) {
       var Attachments = val.fields["Attachments"];
       var Cost = val.fields["Cost"];
       var rate = val.fields["rate"];
-      var itemHTML = gameListItem(id, Name, Pictures,Attachments, rate);
+      var Buy = val.fields["Buy"];
+      var itemHTML = gameListItem(id, Name, Pictures,Attachments, rate, Buy);
       items.push(itemHTML);
     });
     items.push(`</div>`);
