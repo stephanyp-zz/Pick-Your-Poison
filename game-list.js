@@ -26,7 +26,7 @@ function getParameterByName(name, url) {
 var id = getParameterByName("id", window.location.href);
 
 console.log('Hi')
-  $.getJSON( "https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games/recXQa600rMtkcHXb", function( val ) {
+  $.getJSON( 'https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games/$(id)?api_key=keybojDUtvSsJ4IGr', function( val ) {
     // console.log(data.records);
     var items = [];
     items.push(`<div class="row">`);
