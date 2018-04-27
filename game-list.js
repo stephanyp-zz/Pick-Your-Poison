@@ -5,7 +5,7 @@ var gameDetail = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
       <div class="card-body">
         <h2>${Name}</h2>
           <div class="btn-group">
-            <a href="app.html?id=${Cost}" class="btn btn-sm btn-outline-secondary">Price</a>
+            <a href="?id=$(id)" class="btn btn-sm btn-outline-secondary">Price</a>
              <a href="${rate}" button type="button" class="btn btn-sm btn-outline-secondary">Where to Buy</button></a>
           </div>
         </div>
@@ -13,6 +13,7 @@ var gameDetail = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
     </div>
   </div>`;
 }
+
 function getParameterByName(name, url) {
       if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -23,8 +24,6 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 var id = getParameterByName("id", window.location.href);
-
-
 
 console.log('Hi')
   $.getJSON( "https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games/recXQa600rMtkcHXb", function( val ) {
