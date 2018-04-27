@@ -5,7 +5,7 @@ var gameListItem = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
       <div class="card-body">
         <h2>${Name}</h2>
           <div class="btn-group">
-            <a href="app.html?id=${Cost}" class="btn btn-sm btn-outline-secondary">Price</a>
+            <a href="app.html?" class="btn btn-sm btn-outline-secondary">More Info</a>
              <a href="${rate}" button type="button" class="btn btn-sm btn-outline-secondary">Where to Buy</button></a>
           </div>
         </div>
