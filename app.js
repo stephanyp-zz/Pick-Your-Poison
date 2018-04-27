@@ -4,7 +4,6 @@ var gameListItem = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
       <img class="card-img-top" src="${Pictures}">
       <div class="card-body">
         <h2>${Name}</h2>
-        <p class="card-text">"${Pictures}"</p>
           <div class="btn-group">
             <a href="app.html?id=${Cost}" class="btn btn-sm btn-outline-secondary">Price</a>
             <button type="button" class="btn btn-sm btn-outline-secondary">Where to Buy</button>
@@ -15,6 +14,7 @@ var gameListItem = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
     </div>
   </div>`;
 }
+console.log('Hi')
   $.getJSON( "https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games?api_key=keybojDUtvSsJ4IGr", function( data ) {
     // console.log(data.records);
     var items = [];
@@ -22,7 +22,7 @@ var gameListItem = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
     $.each( data.records, function( index, val ) {
       console.log(val.fields)
       var id = val.id;
-      var name = val.fields["Name"];
+      var Name = val.fields["Name"];
       var Pictures = val.fields["Pictures"] ? val.fields["Pictures"][0].url : '';
       var Attachments = val.fields["Attachments"];
       var Cost = val.fields["Cost"];
