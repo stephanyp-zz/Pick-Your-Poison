@@ -8,7 +8,7 @@ var gameListItem = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
             <a href="moreInfo.html?id=${id}" ${Attachments} class="btn btn-sm btn-outline-secondary">More Info</a>
              <a href="${rate}" button type="button" class="btn btn-sm btn-outline-secondary">Where to Buy</button></a>
 
-<a href="taqueria.html?id=${id}">${name}</a></h2>
+<a href="moreInfo.html?id=${id}">${name}</a></h2>
           </div>
         </div>
       </div>
