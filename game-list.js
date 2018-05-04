@@ -26,11 +26,9 @@ function getParameterByName(name, url) {
 var id = getParameterByName("id", window.location.href);
 
 console.log('Hi')
-  $.getJSON( 'https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games/$(id)?api_key=keybojDUtvSsJ4IGr', function( val ) {
-    // console.log(data.records);
+  $.getJSON(`https://api.airtable.com/v0/appp3qUdwqW3M4BCV/Games/${id}?api_key=keybojDUtvSsJ4IGr`, function( val ) {
     var items = [];
     items.push(`<div class="row">`);
-    //$.each( data.records, function( index, val ) {
       console.log(val.fields)
       var id = val.id;
       var Name = val.fields["Name"];
@@ -41,7 +39,7 @@ console.log('Hi')
       var Buy = val.fields["Buy"];
       var itemHTML = gameDetail(id, Name, Pictures,Attachments, Cost, rate, Buy);
       items.push(itemHTML);
-    });
+
     items.push(`</div>`);
 
     $(".game-list" ).append(items.join(""));
