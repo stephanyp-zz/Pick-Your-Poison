@@ -1,11 +1,38 @@
 *{
     text-align: center;
-    background-color: #70bef9;
+    //background-color: #70bef9;
+    font-family: 'Comfortaa', cursive;
 }
+
 img{
   width:30%;
-  image:center;
+  padding:0px;
+  padding-bottom: 0px;
+  border: solid;
 }
-.background{
-  opacity: .5; 
+body{
+  background-color: white;
+}
+
+ h2{
+  font-size: 40px;
+  margin: 25px 25px 25px 25px;
+  //background-color:white;
+ }
+
+p{
+    font-size: 30px;
+}
+
+ .button{
+    font-size: 29px;
+ }
+
+ul{
+  font-size: 15px;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  background-color:#70bef9;
 }

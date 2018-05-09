@@ -3,12 +3,16 @@ var gameDetail = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
     <div class="card mb-4 box-shadow">
       <img class="card-img-top" src="${Pictures}">
       <div class="card-body">
+        <ul>
         <h2>${Name}</h2>
           <div class="btn-group">
-          <h3>Summary</h3>
-            <a href="${Attachments}" button type="button" class="outline-second"></button></a>
-            <a href="${Cost}" class="outline-first">Price</a>
-            <a href="${rate}" button type="button" class="outline-second">Rate</button></a>
+          <a href="${Cost}" class="button">Price</a>
+          <a href="${rate}" button type="button" class="button">Rate</button></a>
+          <h2> Summary</h2>
+            <a href="${Attachments}"><p>This is Where the summary goes...when it works</p></a>
+            <a href="${Attachments}" button type="button" class="button"></button></a>
+
+          </ul>
             </div>
         </div>
       </div>
