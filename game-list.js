@@ -5,9 +5,11 @@ var gameDetail = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
       <div class="card-body">
         <h2>${Name}</h2>
           <div class="btn-group">
-            <a href="?id=$(id)" class="outline-first">Price</a>
-             <a href="${rate}" button type="button" class="outline-second">Where to Buy</button></a>
-          </div>
+          <h3>Summary</h3>
+            <a href="${Attachments}" button type="button" class="outline-second"></button></a>
+            <a href="${Cost}" class="outline-first">Price</a>
+            <a href="${rate}" button type="button" class="outline-second">Rate</button></a>
+            </div>
         </div>
       </div>
     </div>
