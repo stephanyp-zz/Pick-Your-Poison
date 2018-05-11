@@ -9,7 +9,7 @@ var gameDetail = function(id, Name, Pictures,Attachments, Cost, rate, Buy) {
           <a href="${Cost}" class="button">Price</a>
           <a href="${rate}" button type="button" class="button">Rate</button></a>
           <h2> Summary</h2>
-            <a href="${Attachments}"><p>This is Where the summary goes...when it works</p></a>
+            <a href="${Attachments}">This is Where the summary goes...when it works</a>
             <a href="${Attachments}" button type="button" class="button"></button></a>
 
           </ul>
